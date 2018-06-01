@@ -75,7 +75,7 @@ You can identify if the request is successful by checking the root of the json. 
 
 | Name | Description |
 | ---- | ----------- |
-| id | error code, [click here](#yayment-status) for the full list |
+| id | error code, [click here](#payment-status) for the full list |
 | title | The short description of error |
 | detail | The description of error |
 | code | http status code |
@@ -221,9 +221,9 @@ Please avoid using 'transaction\_id' and 'status_code' in your redirect url, as 
 
 
 
-## Payment status
+## Payment Status
 
-Failed payment status will be updatedwhile ($i <= 10) { as accurate as possbile, depending on upstream service provider.
+Failed payment status will be updated as accurate as possbile, depending on upstream service provider.
 
 | Name | Description |
 | ---- | --- |
