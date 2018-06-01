@@ -36,8 +36,6 @@ Will be provided together with appid and secret key.
 | redirect_url | string | - | Optional | The url which the user will be redirected to after the payment, our id and payment status code will be added into the url, check Appendix section for details |
 | redirect_target | string | - | Optional | the default is "_top" |
 | custom | text | - | Optional | Extra identifier you wish to get in payment notification |
-|
-|
 
 #### HTTP Headers:
 
