@@ -75,7 +75,7 @@ You can identify if the request is successful by checking the root of the json. 
 
 | Name | Description |
 | ---- | ----------- |
-| id | error code, [click here] for the full list |
+| id | error code, [click here](#yayment-status) for the full list |
 | title | The short description of error |
 | detail | The description of error |
 | code | http status code |
