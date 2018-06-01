@@ -6,9 +6,9 @@
 4. Payment notification will be sent if the charging is successful
 
 
-#Web services Information
+# Web services Information
 
-We are using RESTful API, and data are encoded in JSON.
+We are using RESTful API, and data is formatted in JSON.
 
 ### URL:
 
@@ -16,11 +16,11 @@ Will be provided together with appid and secret key.
 
 ## Creating a payment order
 
-###Request:
+### Request:
 
-####Endpoint: /api/v1/create
+#### Endpoint: /api/v1/create
 
-####Request parameters ( in json ) :
+#### Request parameters ( in json ) :
 
 | Name | Type | Length | Requirement | Description |
 | -----| -----|-----| ---- | ---- |
@@ -86,7 +86,7 @@ You can identify if the request is successful by checking the root of the json. 
 >
 > >{"errors":{"id":"INVALID\_APP\_ID","title":"The App id in request header is invalid.","detail":"The App id or client account is not found or has been deactivated.","code":400,"links":{"about":""}}}
 
-##Payment Notification
+## Payment Notification
 
 Upon successful payment, payment notification will be sent to the url you configured in our backend via POST method.
 
@@ -99,6 +99,7 @@ Upon successful payment, payment notification will be sent to the url you config
 | details | array of transaction details |
  
 ### Array of transaction details
+
 | Name | Description |
 | ---- | --- |
 | app_id | your AppId |
@@ -116,11 +117,11 @@ Upon successful payment, payment notification will be sent to the url you config
 
 ## Order checking
 
-###Request:
+### Request:
 
-####Endpoint: api/v1/check_order
+#### Endpoint: api/v1/check_order
 
-####Request parameters ( in json ) :
+#### Request parameters ( in json ) :
 
 | Name | Type | Length | Requirement | Description |
 | -----| -----|-----| ---- | ---- |
@@ -137,13 +138,15 @@ Upon successful payment, payment notification will be sent to the url you config
 ### Response ( in Json ):
 
 #### HTTP Headers: 
+
 | Name | Description |
 | ---- | ----------- |
 | Content-Type | application/vnd.api+json |
 | AppId | Your **AppId** |
 | Bodysign | Hash of responded json, Appendix section will cover the calculation. |
 
-#### Body - Successful
+#### Body - Successful:
+
 | Name | Description |
 | ---- | --- |
 | app_id | your AppId |
