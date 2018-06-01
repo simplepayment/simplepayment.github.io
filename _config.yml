@@ -1,4 +1,5 @@
 name: Simplepayment Solutions, Indonesia
 markdown: MacDown
+theme: jekyll-theme-slate
 title: Simplepayment Solutions
 description: This an API documents for simplepayment solutions, the simplest payment gateway in Indonesia.
