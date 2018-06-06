@@ -48,6 +48,7 @@ Will be provided together with appid and secret key.
 ### Response:
 
 #### HTTP Headers: 
+
 | Name | Description |
 | ---- | ----------- |
 | Content-Type | application/vnd.api+json |
