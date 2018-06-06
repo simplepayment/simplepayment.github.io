@@ -193,7 +193,7 @@ Upon successful payment, payment notification will be sent to the url you config
 | airtime | All airtime channels, display selections according to amount |
 | wallet | All wallet channels, display selections according to amount |
 | voucher | All voucher channels, display selections according to amount |
-| airtime_testing | **For testing ONLY, please ignore any payment notification with such value.** To test: phoe number: 088881234567, otp : 1234 | IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |	
+| airtime_testing | **For testing ONLY, please ignore any payment notification with such value after you go live.** To test: phone number: 088881234567, otp : 1234 | IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |	
 
 ## Bodysign
 
