@@ -226,15 +226,20 @@ Please avoid using 'transaction\_id' and 'status_code' in your redirect url, as 
 
 Failed payment status will be updated as accurate as possbile, depending on upstream service provider.
 
-| Name | Description |
-| ---- | --- |
-| PAYMENT_COMPLETED | This payment has been completed successfully, this is the **ONLY** payment status you should accept as payment successful. |
-| ORDER_CREATED | Payment order has been created. |
-| PAYMENT_PENDING | Waiting for user to complete the paymnet. |
-| PAYMENT_FAILED | User does not complete the payment. |
-| USED\_VOUCHER | This voucher code has been used. |
-| INVALID\_VOUCHER | This voucher code is wrong. |
-| PAYMENT\_REVERSED | Payment was reversed, timeout at switching network. |
-| VERIFICATION\_FAILED | Verification is not successul. |
-| CHANNEL\_NOT_AVAILABLE | Payment channel provider is unreachable. |
-| INSUFFICIENT\_BALANCE | Not enough balance to compelete the payment. |
+| Code | Title | Description |
+| ---- | --- | --- |
+| PAYMENT_COMPLETED | Payment Completed | This payment has been completed successfully, this is the **ONLY** payment status you should accept as payment successful. |
+| ORDER_CREATED | Order Created | Payment order has been created. |
+| PAYMENT_PENDING | Payment Pending | Waiting for user to complete the paymnet. |
+| PAYMENT_FAILED | Payment Failed | User does not complete the payment. |
+| USED\_VOUCHER | Used Voucher | This voucher code has been used. |
+| INVALID\_VOUCHER | Invalid Voucher | This voucher code is wrong. |
+| PAYMENT\_REVERSED | Payment Reversed | Payment was reversed, timeout at switching network. |
+| VERIFICATION\_FAILED | Verification Failed | Verification is not successul. |
+| CHANNEL\_NOT_AVAILABLE | Channel is not available | Payment channel provider is unreachable. |
+| INSUFFICIENT\_BALANCE | Insufficient Balance | Not enough balance to compelete the payment. |
+| CHARGING\_REQUEST\_SENT | Charging Request Sent | Charging request has been submitted, payment notification will be sent if payment is successful. |
+| CHARGING\_REQUEST\_FAILED | Charging Request Failed | Charging request has not been sent, please retry. |
+| INVALID\_ACCOUNT | Invalid account | This account id is not found, please retry. |
+| PAYMENT\_CANCELLED | Payment cancelled | User refuse to continue the payment. |
+| PAYMENT\_EXPIRED | Payment expired | The time to complete payment has expired, please retry. |
