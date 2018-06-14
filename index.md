@@ -35,7 +35,6 @@ Will be provided together with appid and secret key.
 | item_id | string | 40 | Optional | Item identifier, useful when you have different items with same price tab |
 | item_name | string | 40 | Mandatory | The name of the item, it will be displayed in payment page or SMS |
 | redirect_url | string | - | Optional | The url which the user will be redirected to after the payment, our id and payment status code will be added into the url, check Appendix section for details |
-| redirect_target | string | - | Optional | the default is "_top" |
 | custom | text | - | Optional | Extra identifier you wish to get in payment notification |
 
 #### HTTP Headers:
