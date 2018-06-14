@@ -3,6 +3,7 @@
 1. Create a payment order to get a transaction id in return
 2. redirect to a specified url or pass the transaction id into sdk
 3. User can complete the payment according to the instructions
+4. User will be redirected back to your page.
 4. Payment notification will be sent if the charging is successful
 
 
@@ -88,6 +89,8 @@ You can identify if the request is successful by checking the root of the json. 
 ## Payment Notification
 
 Upon successful payment, payment notification will be sent to the url you configured in our backend via POST method.
+
+The payment notifcation will be sent from 119.81.215.153
 
 ### Request json
 
@@ -206,7 +209,8 @@ To get the signature, take these steps:
 >> base64 : eyJ0aW1lc3RhbXAiOjE0OTg5NTQ1MTYsImFtb3VudCI6MTAwMDAsInVzZXJfaWQiOiJ0ZXN0X3VzZXIiLCJpdGVtX25hbWUiOiIyMDAwIGNvaW5zIiwicGF5bWVudF9jaGFubmVsIjoidGVsa29tc2VsX2FpcnRpbWUiLCJyZWRpcmVjdF91cmwiOiJodHRwOlwvXC8xOTIuMTY4LjU2LjEwNVwvY2FsbGJhY2tcL3BheW1lbnQiLCJyZWRpcmVjdF90YXJnZXQiOiJfdG9wIiwibWVyY2hhbnRfdHJhbnNhY3Rpb25faWQiOiIxNDk4OTU0NTE2NDI3MTE4In0=
 
 2. Calculate the hash using HMAC-SHA-256, using the **SecretKey** 
-3. > example:
+3. Example
+
 > 
 >> signature : 02978711eb15f52fb2d1c222c056293fd6f0348e28f6b8960d021e142c3a932f
 
