@@ -202,10 +202,10 @@ The payment notifcation will be sent from 119.81.215.153
 To get the signature, take these steps:
 
 1. base64 encode the json
-> example:
+> example ( space is added to enable wraping ):
 > 
->> json: {"timestamp":1498954516,"amount":10000.00,"user_id":"test_user","item_name":"2000 coins","payment\_channel":"telkomsel\_airtime","redirect_url":"http:\/\/192.168.56.105\/callback\/payment","redirect_target":"\_top","merchant_transaction_id":"1498954516427118"}
->> base64 : eyJ0aW1lc3RhbXAiOjE0OTg5NTQ1MTYsImFtb3VudCI6MTAwMDAsInVzZXJfaWQiOiJ0ZXN0X3VzZXIiLCJpdGVtX25hbWUiOiIyMDAwIGNvaW5zIiwicGF5bWVudF9jaGFubmVsIjoidGVsa29tc2VsX2FpcnRpbWUiLCJyZWRpcmVjdF91cmwiOiJodHRwOlwvXC8xOTIuMTY4LjU2LjEwNVwvY2FsbGJhY2tcL3BheW1lbnQiLCJyZWRpcmVjdF90YXJnZXQiOiJfdG9wIiwibWVyY2hhbnRfdHJhbnNhY3Rpb25faWQiOiIxNDk4OTU0NTE2NDI3MTE4In0=
+>> json: {"timestamp":1498954516,"amount":10000.00,"user_id":"test_user","item_name":"2000 coins","payment\_channel":"telkomsel\_airtime","redirect_url":"http:\/\/192.168.56.105\/callback\/payment", "redirect_target":"\_top","merchant_transaction_id":"1498954516427118"}
+>> base64 : eyJ0aW1lc3RhbXAiOjE0OTg5NTQ1MTYsImFtb3VudCI6MTAwMDAsInVzZXJfaWQiOiJ0ZXN0X3VzZXIiLC JpdGVtX25hbWUiOiIyMDAwIGNvaW5zIiwicGF5bWVudF9jaGFubmVsIjoidGVsa29tc2VsX2FpcnRpbWUiLCJ yZWRpcmVjdF91cmwiOiJodHRwOlwvXC8xOTIuMTY4LjU2LjEwNVwvY2FsbGJhY2tcL3BheW1lbnQiLCJyZWRp cmVjdF90YXJnZXQiOiJfdG9wIiwibWVyY2hhbnRfdHJhbnNhY3Rpb25faWQiOiIxNDk4OTU0NTE2NDI3MTE4In0=
 
 2. Calculate the hash using HMAC-SHA-256, using the **SecretKey** 
 3. Example
