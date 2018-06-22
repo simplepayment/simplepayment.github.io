@@ -6,6 +6,7 @@
 4. User will be redirected back to your page.
 4. Payment notification will be sent if the charging is successful
 
+<img src="images/SimplePaymentFlow.png" alt="Flow" class="inline"/>
 
 # Web services Information
 
