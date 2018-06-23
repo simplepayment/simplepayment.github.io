@@ -1,10 +1,10 @@
 # General Flow
 
 1. Create a payment order to get a transaction id in return
-2. redirect to a specified url or pass the transaction id into sdk
+2. Redirect to a specified url or pass the transaction id into sdk
 3. User complete the payment according to the instructions
-4. Redirect user to your page.
-4. Payment notification will be sent if the charging is successful
+4. Payment notification will be sent
+5. Redirect user to your page.
 
 <img src="images/SimpleSequence.png" alt="Flow" class="inline"/>
 
