@@ -2,11 +2,11 @@
 
 1. Create a payment order to get a transaction id in return
 2. redirect to a specified url or pass the transaction id into sdk
-3. User can complete the payment according to the instructions
-4. User will be redirected back to your page.
+3. User complete the payment according to the instructions
+4. Redirect user to your page.
 4. Payment notification will be sent if the charging is successful
 
-<img src="images/SimplePaymentFlow.png" alt="Flow" class="inline"/>
+<img src="images/SimpleSequence.png" alt="Flow" class="inline"/>
 
 # Web services Information
 
