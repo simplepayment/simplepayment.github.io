@@ -66,6 +66,8 @@ You can identify if the request is successful by checking the root of the json. 
 | status | The status code of this order |
 | detail | The message of the status |
 | href | The url to redirect the user, for web payment |
+| rel | Target to the link |
+| method | Method to use |
 
 > example:
 >
@@ -81,6 +83,7 @@ You can identify if the request is successful by checking the root of the json. 
 | title | The short description of error |
 | detail | The description of error |
 | code | http status code |
+| links | Details of the error in web page ( reserved ) |
 
 >example:
 >
@@ -116,6 +119,9 @@ The payment notifcation will be sent from 119.81.215.153
 | item_id | Your item identifier |
 | item_name | Your item name |
 | custom | the extra information submitted during order creation |
+
+> example ( space is added to enable wraping ):
+>>{"data":{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"","item_name":"2000 coins","custom":""}}}
 
 ## Order checking
 
@@ -164,6 +170,9 @@ The payment notifcation will be sent from 119.81.215.153
 | item_name | Your item name |
 | custom | the extra information submitted during order creation |
 
+> example ( space is added to enable wraping ):
+>>{"data":{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"","item_name":"2000 coins","custom":""}}}
+
 #### Body - Error:
 
 | Name | Description |
@@ -172,6 +181,11 @@ The payment notifcation will be sent from 119.81.215.153
 | title | The short description of error |
 | detail | The description of error |
 | code | http status code |
+| links | Details of the error in web page ( reserved ) |
+
+>example:
+>
+> >{"errors":{"id":"INVALID\_APP\_ID","title":"The App id in request header is invalid.","detail":"The App id or client account is not found or has been deactivated.","code":400,"links":{"about":""}}}
 
 # Appendix
 
