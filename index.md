@@ -20,6 +20,8 @@ Will be provided together with appid and secret key.
 
 ### Request:
 
+#### Method: POST
+
 #### Endpoint: /api/v1/create
 
 #### Request parameters ( in json ) :
@@ -94,6 +96,8 @@ Upon successful payment, payment notification will be sent to the url you config
 
 The payment notifcation will be sent from 119.81.215.153
 
+### Method: POST
+
 ### Request json
 
 | Name | Description |
@@ -126,6 +130,8 @@ The payment notifcation will be sent from 119.81.215.153
 ## Order checking
 
 ### Request:
+
+#### Method: POST
 
 #### Endpoint: api/v1/check_order
 
