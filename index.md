@@ -28,7 +28,7 @@ Will be provided together with appid and secret key.
 
 | Name | Type | Length | Requirement | Description |
 | -----| -----|-----| ---- | ---- |
-| timestamp | bigint | - | Mandatory | unix time stamp, also known as POSIX time / epoch time, please synchronize your system clock with NTP pool  |
+| timestamp | bigint | - | Mandatory | unix time stamp, also known as POSIX time / epoch time, please synchronize your system clock with NTP pool, the difference between our servers has to be less than 600 seconds.  |
 | user_id | string | 40 | Mandatory | Id of your user, can be email or running numbers |
 | merchant\_transaction\_id | string | 128 | Mandatory | Merchant transaction identifier, must be unique for every order |
 | transaction_description | string | 256 | Optional | A short description about this order |
@@ -140,6 +140,7 @@ The payment notifcation will be sent from 119.81.215.153
 | Name | Type | Length | Requirement | Description |
 | -----| -----|-----| ---- | ---- |
 | id | string | - | Mandatory | our transaction id |
+| timestamp | bigint | - | Mandatory | unix time stamp, also known as POSIX time / epoch time, please synchronize your system clock with NTP pool, the difference between our servers has to be less than 600 seconds.  |
 
 #### HTTP Headers:
 
