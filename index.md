@@ -129,7 +129,7 @@ The payment notifcation will be sent from 119.81.215.153
 
 ### Response ( in Text ):
 
-'ok'
+> OK
 
 ## Order checking
 
