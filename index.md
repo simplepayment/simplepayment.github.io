@@ -92,7 +92,7 @@ You can identify if the request is successful by checking the root of the json. 
 
 ## Payment Notification
 
-Upon successful payment, payment notification will be sent to the url you configured in our backend via POST method.
+Upon successful payment, payment notification will be sent to the payment notifcation url configured in our backend via POST method, we expect a **OK** ( string ) as response, to stop retrying. Pleae take note that you may receive multiple payment notifications for a same transaction.
 
 The payment notifcation will be sent from 119.81.215.153
 
@@ -126,6 +126,10 @@ The payment notifcation will be sent from 119.81.215.153
 > example ( space is added to enable wraping ):
 >
 >> {"data":{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"","item_name":"2000 coins","custom":""}}}
+
+### Response ( in Text ):
+
+'ok'
 
 ## Order checking
 
