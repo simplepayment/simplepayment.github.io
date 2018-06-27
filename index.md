@@ -115,7 +115,7 @@ The payment notifcation will be sent from 119.81.215.153
 | merchant\_transaction_id | Your transaction id, same as the one in payment order
 | transaction_description | Description of this transaction, if there is any |
 | payment_channel | Payment channel that user used to complete this order |
-| currency | ISO 4217 Currency Codes, [click here](http://www.xe.com/iso4217.php) for the complete list |
+| currency | The currency, only these: 'MYR', 'IDR', 'PHP' |
 | amount | The total amount that user paid |
 | status_code | The status of the transaction, Appendix section has the complete list |
 | status | Short description of status_code. |
@@ -209,6 +209,7 @@ The payment notifcation will be sent from 119.81.215.153
 | indosat_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR25.000, IDR50.000, IDR100.000 |
 | xl_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR25.000, IDR50.000, IDR100.000 |
 | three_airtime | Airtime, Indonesia | IDR5000, IDR10000, IDR25.000, IDR50.000, IDR100.000 |
+| bank_transfer | All bank transfer channels currency and amount, IDR50.000 ~ IDR20.000.000 |
 | alfa_otc | Over the counter of convenience store Alfamart, Indonesia | IDR10000 ~ Rp1.000.000 |
 | indomaret_otc | Over the counter of convenience store Indomaret, Indonesia | IDR10000 ~ Rp1.000.000 |
 | doku_wallet | Doku Wallet, Indonesia | IDR10.000 ~ IDR100.0000 |
@@ -216,12 +217,13 @@ The payment notifcation will be sent from 119.81.215.153
 | digi_airtime | Airtime, Malaysia | MYR3, MYR5, MYR10, MYR20, MYR50 |
 | maxis_airtime | Airtime, Malaysia | MYR3, MYR5, MYR10, MYR20, MYR50 |
 | meps | Online Banking, Malaysia | MYR50 ~ MYR1000 |
-| all | All payment channels, display selections according to amount |
-| default | All non-voucher payment channels, display selections according to amount |
-| bank_transfer | All bank transfer channels, display selections according to amount, IDR50.000 ~ IDR20.000.000 |
-| airtime | All airtime channels, display selections according to amount |
-| wallet | All wallet channels, display selections according to amount |
-| voucher | All voucher channels, display selections according to amount |
+| smart_airtime | Airtime, Philippines | PHP5, PHP10, PHP20, PHP50, PHP100 |
+| globe_airtime | Airtime, Philippines | PHP5, PHP10, PHP20, PHP50, PHP100 |
+| all | All payment channels, display selections according to currency and amount |
+| default | All non-voucher payment channels, display selections according to currency and amount |
+| airtime | All airtime channels, display selections according to currency and amount |
+| wallet | All wallet channels, display selections according to currency and amount |
+| voucher | All voucher channels, display selections according to currency and amount |
 | airtime_testing | **For testing ONLY, please ignore any payment notification with such value after you go live.** To test: phone number: 088881234567, otp : 1234 | IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |	
 
 ## Bodysign
