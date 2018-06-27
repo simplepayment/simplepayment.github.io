@@ -1,3 +1,6 @@
 table {
     width:100%;
 }
+.inner { 
+    max-width:740px;
+}
