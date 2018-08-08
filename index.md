@@ -62,8 +62,10 @@ You can identify if the request is successful by checking the root of the json. 
 
 #### Body - Successful:
 
+
 | Name | Description |
 | ---- | ----------- |
+| data | Top level or root of response |
 | id | Our transaction identifier , work as a token as well, as it is only valid for 10 minutes. |
 | status | The status code of this order |
 | detail | The message of the status |
@@ -73,13 +75,18 @@ You can identify if the request is successful by checking the root of the json. 
 
 > example:
 >
->>{"data":{"id":"595962b31bc7e0056a5051ba","timestamp":1499030195,"status":"ORDER_CREATED","status_code":200,"title":"Order Created.","detail":"Payment order has been created.","links":{"href":"http:\/\/payment.simplepayment.solutions\/order\/595962b31bc7e0056a5051ba","rel":"self","method":"GET"}}}"
+>>{"data":
+{"id":"595962b31bc7e0056a5051ba","timestamp":1499030195,"status":"ORDER_CREATED",
+"status_code":200,"title":"Order Created.","detail":"Payment order has been created.",
+"links":{"href":"http:\/\/payment.simplepayment.solutions\/order\/595962b31bc7e0056a5051ba",
+"rel":"self","method":"GET"}}}"
 }
 
 #### Body - Error:
 
 | Name | Description |
 | ---- | ----------- |
+| errors | Top level or root of response |
 | id | error code, [click here](#error-codes) for the full list |
 | title | The short description of error |
 | detail | The description of error |
@@ -88,7 +95,10 @@ You can identify if the request is successful by checking the root of the json. 
 
 >example:
 >
->> {"errors":{"id":"INVALID\_APP\_ID","title":"The App id in request header is invalid.","detail":"The App id or client account is not found or has been deactivated.","code":400,"links":{"about":""}}}
+>> {"errors":
+{"id":"INVALID\_APP\_ID","title":"The App id in request header is invalid.",
+"detail":"The App id or client account is not found or has been deactivated.",
+"code":400,"links":{"about":""}}}
 
 ## Payment Notification
 
@@ -102,6 +112,7 @@ The payment notifcation will be sent from 119.81.215.153
 
 | Name | Description |
 | ---- | --- |
+| data | Top level or root of response |
 | id | Our transaction identifier |
 | timestamp | unix timestamp |
 | details | array of transaction details |
@@ -125,7 +136,12 @@ The payment notifcation will be sent from 119.81.215.153
 
 > example ( space is added to enable wraping ):
 >
->> {"data":{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"","item_name":"2000 coins","custom":""}}}
+>> {"data":
+{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", 
+"transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
+"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", 
+"item_id":"","item_name":"2000 coins","custom":""}}
+}
 
 ### Response ( in Text ):
 
@@ -168,6 +184,7 @@ The payment notifcation will be sent from 119.81.215.153
 
 | Name | Description |
 | ---- | --- |
+| data | Top level or root of response |
 | app_id | your AppId |
 | user_id | User identifier, same as the one in order creation |
 | merchant\_transaction_id | Your transaction id, same as the one in payment order
@@ -183,12 +200,17 @@ The payment notifcation will be sent from 119.81.215.153
 
 > example ( space is added to enable wraping ):
 >
->> {"data":{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"","item_name":"2000 coins","custom":""}}}
+>> {"data":
+{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
+"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"",
+"item_name":"2000 coins","custom":""}}
+}
 
 #### Body - Error:
 
 | Name | Description |
 | ---- | ----------- |
+| errors | Top level or root of response |
 | id | error code, [click here] for the full list |
 | title | The short description of error |
 | detail | The description of error |
@@ -197,7 +219,11 @@ The payment notifcation will be sent from 119.81.215.153
 
 >example:
 >
->> {"errors":{"id":"INVALID\_APP\_ID","title":"The App id in request header is invalid.","detail":"The App id or client account is not found or has been deactivated.","code":400,"links":{"about":""}}}
+>> {"errors":
+{"id":"INVALID\_APP\_ID","title":"The App id in request header is invalid.",
+"detail":"The App id or client account is not found or has been deactivated.",
+"code":400,"links":{"about":""}}
+}
 
 # Appendix
 
@@ -235,7 +261,8 @@ To get the signature, take these steps:
 >
 >> json :
 >
->> {"timestamp":1498954516,"amount":10000.00,"user_id":"test_user","item_name":"2000 coins","payment\_channel":"telkomsel\_airtime","redirect_url":"http:\/\/192.168.56.105\/callback\/payment", "redirect_target":"\_top","merchant_transaction_id":"1498954516427118"}
+>> {"timestamp":1498954516,"amount":10000.00,"user_id":"test_user","item_name":"2000 coins",
+"payment\_channel":"telkomsel\_airtime","redirect_url":"http:\/\/192.168.56.105\/callback\/payment", "redirect_target":"\_top","merchant_transaction_id":"1498954516427118"}
 >
 >> base64 : 
 >
