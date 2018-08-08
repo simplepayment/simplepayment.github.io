@@ -134,6 +134,7 @@ The payment notifcation will be sent from 119.81.215.153
 | status | Short description of status_code. |
 | item_id | Your item identifier |
 | item_name | Your item name |
+| testing | Testing status of this transaction, '1' or '0' |
 | custom | the extra information submitted during order creation |
 
 > example ( space is added to enable wraping ):
@@ -142,7 +143,8 @@ The payment notifcation will be sent from 119.81.215.153
 {"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", 
 "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
 "status_code":"PAYMENT_COMPLETED","status":"Payment Completed", 
-"item_id":"","item_name":"2000 coins","custom":""}}
+"item_id":"","item_name":"2000 coins","testing" : "0",
+"custom":""}}
 }
 
 ### Response ( in Text ):
