@@ -76,9 +76,11 @@ You can identify if the request is successful by checking the root of the json. 
 > example:
 >
 >>{"data":
-{"id":"595962b31bc7e0056a5051ba","timestamp":1499030195,"status":"ORDER_CREATED",
-"status_code":200,"title":"Order Created.","detail":"Payment order has been created.",
-"links":{"href":"http:\/\/payment.simplepayment.solutions\/order\/595962b31bc7e0056a5051ba",
+{"id":"595962b31bc7e0056a5051ba","timestamp":1499030195,
+"status":"ORDER_CREATED","status_code":200,"title":"Order Created.",
+"detail":"Payment order has been created.",
+"links":
+{"href":"http:\/\/payment.simplepayment.solutions\/order\/595962b31bc7e0056a5051ba",
 "rel":"self","method":"GET"}}}"
 }
 
@@ -201,7 +203,10 @@ The payment notifcation will be sent from 119.81.215.153
 > example ( space is added to enable wraping ):
 >
 >> {"data":
-{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", "transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
+{"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":
+{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,
+"merchant_transaction_id":"1529746034273349", "transaction_description":"",
+"payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
 "status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"",
 "item_name":"2000 coins","custom":""}}
 }
@@ -261,12 +266,20 @@ To get the signature, take these steps:
 >
 >> json :
 >
->> {"timestamp":1498954516,"amount":10000.00,"user_id":"test_user","item_name":"2000 coins",
-"payment\_channel":"telkomsel\_airtime","redirect_url":"http:\/\/192.168.56.105\/callback\/payment", "redirect_target":"\_top","merchant_transaction_id":"1498954516427118"}
+>> {"timestamp":1498954516,"amount":10000.00,"user_id":"test_user",
+"item_name":"2000 coins","payment\_channel":"telkomsel\_airtime",
+"redirect_url":"http:\/\/192.168.56.105\/callback\/payment", 
+"redirect_target":"\_top","merchant_transaction_id":"1498954516427118"}
 >
 >> base64 : 
 >
->> eyJ0aW1lc3RhbXAiOjE0OTg5NTQ1MTYsImFtb3VudCI6MTAwMDAsInVzZXJfaWQiOiJ0ZXN0X3VzZXIiLC JpdGVtX25hbWUiOiIyMDAwIGNvaW5zIiwicGF5bWVudF9jaGFubmVsIjoidGVsa29tc2VsX2FpcnRpbWUiLCJ yZWRpcmVjdF91cmwiOiJodHRwOlwvXC8xOTIuMTY4LjU2LjEwNVwvY2FsbGJhY2tcL3BheW1lbnQiLCJyZWRp cmVjdF90YXJnZXQiOiJfdG9wIiwibWVyY2hhbnRfdHJhbnNhY3Rpb25faWQiOiIxNDk4OTU0NTE2NDI3MTE4In0=
+>> eyJ0aW1lc3RhbXAiOjE0OTg5NTQ1MTYsImFtb3VudCI6MTAwMD
+AsInVzZXJfaWQiOiJ0ZXN0X3VzZXIiLC JpdGVtX25hbWUiOiIyMD
+AwIGNvaW5zIiwicGF5bWVudF9jaGFubmVsIjoidGVsa29tc2VsX2F
+pcnRpbWUiLCJ yZWRpcmVjdF91cmwiOiJodHRwOlwvXC8xOTIuMTY
+4LjU2LjEwNVwvY2FsbGJhY2tcL3BheW1lbnQiLCJyZWRpcmVjdF90
+YXJnZXQiOiJfdG9wIiwibWVyY2hhbnRfdHJhbnNhY3Rpb25faWQiO
+iIxNDk4OTU0NTE2NDI3MTE4In0=
 
 2. Calculate the hash using HMAC-SHA-256, using the **SecretKey** 
 3. Example
@@ -282,9 +295,6 @@ Please avoid using 'transaction\_id' and 'status_code' in your redirect url, as 
 >
 >> https://www.domain.com/redirect?transaction\_id=5a586c21eed56c65b370bd74&status\_code=PAYMENT_PENDING
 >> 
->> https://www.domain.com/redirect?param1=param1&param2=param2&transaction\_id=5a586c21eed56c65b370bd74&status\_code=PAYMENT_PENDING
-
-
 
 ## Payment Status
 
