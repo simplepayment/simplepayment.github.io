@@ -80,7 +80,7 @@ You can identify if the request is successful by checking the root of the json. 
 
 | Name | Description |
 | ---- | ----------- |
-| id | error code, [click here](#payment-status) for the full list |
+| id | error code, [click here](#error-codes) for the full list |
 | title | The short description of error |
 | detail | The description of error |
 | code | http status code |
@@ -265,10 +265,10 @@ Failed payment status will be updated as accurate as possbile, depending on upst
 
 | Code | Title | Description |
 | ---- | --- | --- |
-| PAYMENT_COMPLETED | Payment Completed | This payment has been completed successfully, this is the **ONLY** payment status you should accept as payment successful. |
-| ORDER_CREATED | Order Created | Payment order has been created. |
-| PAYMENT_PENDING | Payment Pending | Waiting for user to complete the paymnet. |
-| PAYMENT_FAILED | Payment Failed | User does not complete the payment. |
+| PAYMENT\_COMPLETED | Payment Completed | This payment has been completed successfully, this is the **ONLY** payment status you should accept as payment successful. |
+| ORDER\_CREATED | Order Created | Payment order has been created. |
+| PAYMENT\_PENDING | Payment Pending | Waiting for user to complete the paymnet. |
+| PAYMENT\_FAILED | Payment Failed | User does not complete the payment. |
 | USED\_VOUCHER | Used Voucher | This voucher code has been used. |
 | INVALID\_VOUCHER | Invalid Voucher | This voucher code is wrong. |
 | PAYMENT\_REVERSED | Payment Reversed | Payment was reversed, timeout at switching network. |
@@ -280,3 +280,18 @@ Failed payment status will be updated as accurate as possbile, depending on upst
 | INVALID\_ACCOUNT | Invalid account | This account id is not found, please retry. |
 | PAYMENT\_CANCELLED | Payment cancelled | User refuse to continue the payment. |
 | PAYMENT\_EXPIRED | Payment expired | The time to complete payment has expired, please retry. |
+
+## Error Codes
+ 
+These are the error codes you may encounter while sending request to endpoints:
+
+| Code | Description |
+| ---- |  --- |
+| INVALID\_APP\_ID | The App id in request header is invalid. |
+| INVALID\_PAYLOAD | The payload is not json. |
+| MISSING\_PARAMETERS | Some mandatory parameters are missing from the request. |
+| DUPLICATED\_TRANS\_ID | This transacion id has been used, please make sure each payment request has unique transaction id. |
+| PAYMENT\_UNDER\_MAINTENANCE | This payment channel is performing maintenance now. |
+| INVALID\_PAYMENT\_METHOD| This payment method is not supported by this application. |
+| INVALID\_DENOM | This payment method does not support this denomination. |
+
