@@ -67,7 +67,8 @@ You can identify if the request is successful by checking the root of the json. 
 | ---- | ----------- |
 | data | Top level or root of response |
 | id | Our transaction identifier , work as a token as well, as it is only valid for 10 minutes. |
-| status | The status code of this order |
+| status_code | The status code of this order |
+| title | The status of this order |
 | detail | The message of the status |
 | href | The url to redirect the user, for web payment |
 | rel | Target to the link |
@@ -77,7 +78,7 @@ You can identify if the request is successful by checking the root of the json. 
 >
 >>{"data":
 {"id":"595962b31bc7e0056a5051ba","timestamp":1499030195,
-"status":"ORDER_CREATED","status_code":200,"title":"Order Created.",
+"status_code":"ORDER_CREATED","title":"Order Created.",
 "detail":"Payment order has been created.",
 "links":
 {"href":"http:\/\/payment.simplepayment.solutions\/order\/595962b31bc7e0056a5051ba",
