@@ -107,7 +107,7 @@ You can identify if the request is successful by checking the root of the json. 
 
 Upon successful payment, payment notification will be sent to the payment notifcation url configured in our backend via POST method, we expect a **OK** ( string ) as response, to stop retrying. Pleae take note that **you may receive multiple payment notifications for a same transaction**.
 
-The payment notifcation will be sent from 13.229.183.248
+The payment notifcation will be sent from 18.136.103.59 (development server) and 13.229.183.248 (production server) 
 
 ### Method: POST
 
