@@ -143,10 +143,10 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 >
 >> {"data":
 {"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":{"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,"merchant_transaction_id":"1529746034273349", 
-"transaction_description":"","payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
-"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", 
-"item_id":"","item_name":"2000 coins","testing" : "0",
-"custom":""}}
+"transaction_description":"","payment_channel":"airtime_testing","channel_name":"Airtime Testing",
+"currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED",
+"status":"Payment Completed", "item_id":"","item_name":"2000 coins",
+"testing" : "1","custom":""}}
 }
 
 ### Response ( in Text ):
@@ -212,9 +212,10 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 {"id":"5b2e1344eef87c12b425f701","timestamp":1529746601,"details":
 {"app_id":"58c787cf398e82bea93ce070","user_id":1529746034,
 "merchant_transaction_id":"1529746034273349", "transaction_description":"",
-"payment_channel":"Airtime Testing","currency":"IDR","amount":10000,
-"status_code":"PAYMENT_COMPLETED","status":"Payment Completed", "item_id":"",
-"item_name":"2000 coins","custom":""}}
+"payment_channel":"airtime_testing,"channel_name":"Airtime Testing",
+"currency":"IDR","amount":10000,"status_code":"PAYMENT_COMPLETED",
+"status":"Payment Completed", "item_id":"","item_name":"2000 coins",
+"testing":"1","custom":""}}
 }
 
 #### Body - Error:
