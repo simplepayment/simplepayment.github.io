@@ -128,7 +128,8 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | user_id | User identifier, same as the one in order creation |
 | merchant\_transaction_id | Your transaction id, same as the one in payment order
 | transaction_description | Description of this transaction, if there is any |
-| payment_channel | Payment channel that user used to complete this order |
+| payment_channel | Payment channel that user used to complete this order, refer to Appendix for the complete list |
+| channel_name | The name of the payment channel. |
 | currency | The currency, only these: 'MYR', 'IDR', 'PHP' |
 | amount | The total amount that user paid |
 | status_code | The status of the transaction, Appendix section has the complete list |
@@ -195,12 +196,14 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | merchant\_transaction_id | Your transaction id, same as the one in payment order
 | transaction_description | Description of this transaction, if there is any |
 | payment_channel | Payment channel that user used to complete this order |
+| channel_name | The name of the payment channel. |
 | currency | ISO 4217 Currency Codes, [click here](http://www.xe.com/iso4217.php) for the complete list |
 | amount | The total amount that user paid |
 | status_code | The status of the transaction, Appendix section has the complete list |
 | status | Short description of status_code. |
 | item_id | Your item identifier |
 | item_name | Your item name |
+| testing | Testing status of this transaction, '1' or '0' |
 | custom | the extra information submitted during order creation |
 
 > example ( space is added to enable wraping ):
