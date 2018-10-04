@@ -14,7 +14,9 @@ We are using RESTful API, and data is formatted in JSON.
 
 ### URL:
 
-Will be provided together with appid and secret key.
+Sandbox : https://staging.simplepayment.solutions/
+
+Production : https://api.simplepayment.solutions/
 
 ## Creating a payment order
 
