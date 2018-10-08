@@ -264,7 +264,7 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | airtime | All airtime channels, display selections according to currency and amount |
 | wallet | All wallet channels, display selections according to currency and amount |
 | voucher | All voucher channels, display selections according to currency and amount |
-| airtime_testing | **For testing ONLY, please ignore any payment notification with such value after you go live.** To test: phone number: 088881234567, otp : 1234 | IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |	
+| airtime_testing | **For testing ONLY, please ignore any payment notification with such value after you go live.** To test: Phone number: 088881234567, Sms code : 1234 | IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |	
 
 ## Bodysign
 
