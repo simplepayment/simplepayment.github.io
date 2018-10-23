@@ -248,7 +248,7 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | telkomsel_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR25.000, IDR50.000, IDR100.000 |
 | indosat_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |
 | xl_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |
-| three_airtime | Airtime, Indonesia | IDR5000, IDR10000, IDR20.000, IDR50.000, IDR100.000 |
+| three_airtime | Airtime, Indonesia | IDR5000, IDR10000, IDR20.000, IDR25.000, IDR50.000, IDR100.000 |
 | bank_transfer | All bank transfer channels currency and amount, IDR50.000 ~ IDR20.000.000 |
 | alfamart_otc | Over the counter of convenience store Alfamart, Indonesia | IDR10000 ~ Rp1.000.000 |
 | indomaret_otc | Over the counter of convenience store Indomaret, Indonesia | IDR10000 ~ Rp1.000.000 |
