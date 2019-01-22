@@ -1,7 +1,7 @@
 # General Flow
 
 1. Create a payment order to get a transaction id in return
-2. Redirect to a specified url or pass the transaction id into sdk
+2. Redirect to a specified url 
 3. User complete the payment according to the instructions
 4. Payment notification will be sent
 5. Redirect user to your page.
