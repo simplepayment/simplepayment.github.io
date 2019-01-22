@@ -258,8 +258,6 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | digi_airtime | Airtime, Malaysia | MYR3, MYR5, MYR10, MYR20, MYR50 |
 | smart_airtime | Airtime, Philippines | PHP5, PHP10, PHP20, PHP50, PHP100 |
 | globe_airtime | Airtime, Philippines | PHP5, PHP10, PHP20, PHP50, PHP100 |
-| all | All payment channels, display selections according to currency and amount |
-| default | All non-voucher payment channels, display selections according to currency and amount |
 | airtime | All airtime channels, display selections according to currency and amount |
 | wallet | All wallet channels, display selections according to currency and amount |
 | voucher | All voucher channels, display selections according to currency and amount |
