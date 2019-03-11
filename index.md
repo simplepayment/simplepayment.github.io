@@ -249,7 +249,7 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | indosat_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | xl_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | three_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
-| bank_transfer | All bank transfer channels currency and amount, IDR50.000 ~ IDR20.000.000 |
+| bank_transfer | All bank transfer channels, Indonesia only for now.| IDR50.000 ~ IDR20.000.000 |
 | bank_transfer_bca | BCA bank transfer, reflected in payment notification. |
 | bank_transfer_permata | Permata bank transfer, reflected in payment notification. |
 | bank_transfer_mandiri | Mandiri bank transfer, reflected in payment notification. |
@@ -345,8 +345,8 @@ These are the error codes you may encounter while sending request to endpoints:
 
 1. Will I be able to use staging account after migrating to production？
 
-Yes, staging account and production account are not related, you can always use it for testing. Please be aware of the payment notification URL, make sure it is pointing to your staging server as well.
+...Yes, staging account and production account are not related, you can always use it for testing. Please be aware of the payment notification URL, make sure it is pointing to your staging server as well.
 
 2. There are so many types of 'Bank Transfer', which one should i use?
 
-When creating an order, please use 'bank_transfer', as it will show all bank channels to user. After users completed the payment with one of the channels, a specific channel name, for example 'bank_transfer_bca', will be reflected in payment notification. 
+...When creating an order, please use 'bank_transfer', as it will show all bank channels to user. After users completed the payment with one of the channels, a specific channel name, for example 'bank_transfer_bca', will be reflected in payment notification. 
