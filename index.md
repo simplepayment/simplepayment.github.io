@@ -345,8 +345,8 @@ These are the error codes you may encounter while sending request to endpoints:
 
 1. Will I be able to use staging account after migrating to production？
 
-...Yes, staging account and production account are not related, you can always use it for testing. Please be aware of the payment notification URL, make sure it is pointing to your staging server as well.
+- Yes, staging account and production account are not related, you can always use it for testing. Please be aware of the payment notification URL, make sure it is pointing to your staging server as well.
 
 2. There are so many types of 'Bank Transfer', which one should i use?
 
-...When creating an order, please use 'bank_transfer', as it will show all bank channels to user. After users completed the payment with one of the channels, a specific channel name, for example 'bank_transfer_bca', will be reflected in payment notification. 
+- When creating an order, please use 'bank_transfer', as it will show all bank channels to user. After users completed the payment with one of the channels, a specific channel name, for example 'bank_transfer_bca', will be reflected in payment notification. 
