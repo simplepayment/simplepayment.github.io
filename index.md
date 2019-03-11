@@ -250,6 +250,9 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | xl_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | three_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | bank_transfer | All bank transfer channels currency and amount, IDR50.000 ~ IDR20.000.000 |
+| bank_transfer_bca | BCA bank transfer, reflected in payment notification. |
+| bank_transfer_permata | Permata bank transfer, reflected in payment notification. |
+| bank_transfer_mandiri | Mandiri bank transfer, reflected in payment notification. |
 | alfamart_otc | Over the counter of convenience store Alfamart, Indonesia | IDR10.000 ~ Rp1.000.000 |
 | indomaret_otc | Over the counter of convenience store Indomaret, Indonesia | IDR10.000 ~ Rp1.000.000 |
 | doku_wallet | Doku Wallet, Indonesia | IDR1.0000 ~ IDR1.000.000 |
@@ -338,3 +341,12 @@ These are the error codes you may encounter while sending request to endpoints:
 | INVALID\_PAYMENT\_METHOD| This payment method is not supported by this application. |
 | INVALID\_DENOM | This payment method does not support this denomination. |
 
+# FAQ
+
+1. Will I be able to use staging account after migrating to production？
+
+Yes, staging account and production account are not related, you can always use it for testing. Please be aware of the payment notification URL, make sure it is pointing to your staging server as well.
+
+2. There are so many types of 'Bank Transfer', which one should i use?
+
+When creating an order, please use 'bank_transfer', as it will show all bank channels to user. After users completed the payment with one of the channels, a specific channel name, for example 'bank_transfer_bca', will be reflected in payment notification. 
