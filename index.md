@@ -64,6 +64,7 @@ You can identify if the request is successful by checking the root of the json. 
 
 #### Body - Successful:
 
+**Please make sure the webview in Android is able to handle sms and phone links. ( sms:// , tel:// )**
 
 | Name | Description |
 | ---- | ----------- |
