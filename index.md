@@ -250,6 +250,7 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | indosat_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | xl_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | three_airtime | Airtime, Indonesia | IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
+| smartfren_airtime | Airtime, Indonesia | IDR1.000, IDR2.000, IDR3.000, IDR5.000, IDR10.000, IDR20.000, IDR50.000, IDR100.000, IDR200.000, IDR500.000 |
 | bank_transfer | All bank transfer channels, Indonesia only for now.| IDR50.000 ~ IDR20.000.000 |
 | bank_transfer_bca | BCA bank transfer, reflected in payment notification. |
 | bank_transfer_permata | Permata bank transfer, reflected in payment notification. |
@@ -258,6 +259,8 @@ The payment notifcation will be sent from 18.136.103.59 (development server) and
 | indomaret_otc | Over the counter of convenience store Indomaret, Indonesia | IDR10.000 ~ Rp1.000.000 |
 | doku_wallet | Doku Wallet, Indonesia | IDR1.0000 ~ IDR1.000.000 |
 | ovo_wallet | Ovo Wallet, Indonesia | IDR1.000 ~ IDR1.000.000 |
+| dana_wallet | Dana Wallet, Indonesia | IDR1.000 ~ IDR10.000.000 |
+| linkaja_wallet | LinkAja Wallet, Indonesia | IDR2.000, IDR5.000, IDR10.000, IDR20.000, IDR25.000, IDR50.000, IDR100.000, IDR200.000, IDR250.000, IDR500.000 |
 | celcom_airtime | Airtime, Malaysia | MYR3, MYR20, MYR10, MYR20, MYR50 |
 | digi_airtime | Airtime, Malaysia | MYR3, MYR5, MYR10, MYR20, MYR50 |
 | smart_airtime | Airtime, Philippines | PHP5, PHP10, PHP20, PHP50, PHP100 |
